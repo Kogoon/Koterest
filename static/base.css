@@ -1,0 +1,27 @@
+.koterest_header {
+    text-align: center;
+    margin: 1.5rem 0
+}
+
+.koterest_header_logo {
+    font-family: 'Gugi', cursive;
+}
+
+.koterest_header_nav {
+    margin-bottom: 1rem;
+}
+
+.koterest_footer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.koterest_footer_button {
+    font-size: .7rem
+}
+
+.koterest_footer_logo {
+    font-family: 'Gugi', cursive;
+    margin-top: 1rem
+}
+
