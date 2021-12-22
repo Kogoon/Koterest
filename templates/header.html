@@ -17,6 +17,9 @@
                     <span>Signup</span>
                 </a>
             {% else %}
+                <a href="{% url 'subscribeapp:list' %}" class="koterest_header_nav">
+                    <span>Subscription</span>
+                </a>
                 <a href="{% url 'accountapp:detail' pk=user.pk %}" class="koterest_header_nav">
                     <span>MyPage</span>
                 </a>
