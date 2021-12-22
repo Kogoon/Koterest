@@ -7,7 +7,7 @@
     font-family: 'Gugi', cursive;
 }
 
-.koterest_header_nav {
+.koterest_header_navbar {
     margin-bottom: 1rem;
 }
 
@@ -29,4 +29,18 @@
     html {
         font-size: 13px;
     }
+}
+
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.koterest_header_nav {
+    margin: 0 0.5rem;
 }
