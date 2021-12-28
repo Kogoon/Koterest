@@ -13,12 +13,15 @@
                      style="height: 12rem; width: 12rem; border-radius: 20rem; margin-bottom: 2rem; object-fit: cover">
                 <h2>
                     {{ target_user.profile.nickname }}
-                </h2>
+
                     {% if target_user == user %}
-                <a href="{% url 'profileapp:update' pk=target_user.profile.pk %}">
-                    Edit
+                <a class="material-icons"
+                   style="box-shadow: 0 0 4px #ccc; border-radius: 10rem; padding: .4rem"
+                   href="{% url 'profileapp:update' pk=target_user.profile.pk %}">
+                    create
                 </a>
                     {% endif %}
+                </h2>
                 <h5 style="margin-bottom: 4rem">
                     {{ target_user.profile.message }}
                 </h5>
@@ -49,14 +52,18 @@
             {% endif %}
 
             {% if target_user == user %}
-                <a href="{% url 'accountapp:update' pk=user.pk %}">
+                <a class="material-icons"
+                   style="box-shadow: 0 0 4px #ccc; border-radius: 10rem; padding: .4rem"
+                   href="{% url 'accountapp:update' pk=user.pk %}">
                     <p>
-                        Change Info
+                        settings
                     </p>
                 </a>
-                <a href="{% url 'accountapp:delete' pk=user.pk %}">
+                <a class="material-icons"
+                   style="box-shadow: 0 0 4px #fcc; border-radius: 1rem;"
+                   href="{% url 'accountapp:delete' pk=user.pk %}">
                     <p>
-                        Quit
+                        cancel
                     </p>
                 </a>
             {% endif %}
