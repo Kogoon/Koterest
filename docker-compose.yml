@@ -1,0 +1,7 @@
+version: "3.7"
+
+services:
+  django:
+    image: koterest
+    ports:
+      - 8000:8000
